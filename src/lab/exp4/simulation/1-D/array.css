@@ -329,6 +329,7 @@ body {
     left: 60%;
     background: #F5B941;
 }
+.keyPositionLabel > thread > t
 
 .sortedKeyLabelText, .unsortedKeyLabelText, .keyPositionLabelText {
     position: absolute;
