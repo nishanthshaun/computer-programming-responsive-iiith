@@ -230,7 +230,7 @@ window.view = {
 				this.setInnerHtml('outputDayId', 'WORKING DAY');
 	 		}
 	 	}
-		if ( model.inputNumber > 7 ) {
+		if ( model.inputNumber > 7||model.inputNumber<1 ) {
 	 		if (this.nextSiblingElement.id === 'holidayId')
 				this.codeExecutionWithColourAndId('elseIfId');
 	 		else if (this.nextSiblingElement.id === 'workingdayId') 
@@ -245,8 +245,8 @@ window.view = {
 				this.codeExecutionWithColour();
 				this.changeOpacity('holidayImage');
 				this.setInnerHtml('outputDayId', 'HOLIDAY');
-	 		}
-	 	}
+			 }
+		}
 		if (this.nextSiblingElement.id === 'ifId')
 			this.codeExecutionWithColour();
 		if (this.nextSiblingElement.id === 'closeBrc2Id' || this.nextSiblingElement.id === 'elseId' || this.nextSiblingElement.id === 'elseIfId') {
