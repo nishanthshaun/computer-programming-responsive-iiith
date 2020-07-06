@@ -291,7 +291,7 @@ window.view = {
 			return false;
 		} 
 		else if (valueA2 > valueB2 || valueB2 > 10) {
-			alert('Integration Limits are from 1 to 10');
+			alert('invalid input');
 			return false;
 		}
 		else {
